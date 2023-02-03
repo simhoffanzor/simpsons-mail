@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <title>My Simpsons Email</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="titulo">¡Envia tu correo!</h2>
+        <img src="./resources/homero.png" alt="Homero" class="img-homero"/>
+    </div>
+    <form id="formulario" class="formulario-emails">
+        <div class="form-group sector-email">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" class="form-control input-email" placeholder="Ingresa la dirección de email">
+        </div>
+        <div class="form-group sector-cc">
+            <label for="cc">CC:</label>
+            <input id="cc" type="email" class="form-control input-cc" placeholder="Ingresa a quién irá la copia">
+        </div>
+        <div class="form-group sector-asunto">
+            <label for="asunto">Asunto</label>
+            <input id="asunto" type="text" class="form-control input-asunto" placeholder="Ingresa el asunto de tu correo">
+        </div>
+        <div class="form-group sector-mensaje">
+            <label for="mensaje">Mensaje</label>
+            <textarea id= "mensaje" type="text" class="form-control input-mensaje" placeholder="¿Qué mensaje quieres darle al receptor del correo?"></textarea>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="submit" class="btn btn-enviar" disabled>Enviar</button>
+            </div>
+            <div class="col">
+                <button type="reset" class="btn btn-resetear">Resetear</button>
+            </div>
+        </div>
+        <div class="d-none contenedor-spinner">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </form>
+
+    <script src="./js/app.js"/>
+</body>
+</html>
